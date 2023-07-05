@@ -5,7 +5,7 @@ import { createUserDocumentFroAuth } from "../../utils/firebase/firebase.utils";
 const SignIn = () => {
   const logGoogleUser = async () => {
     const { user } = await signInWithGooglePopup(); //use info pulled from
-    createUserDocumentFroAuth(user);
+    const userDocRef = await createUserDocumentFroAuth(user);
   };
   return (
     <div>
