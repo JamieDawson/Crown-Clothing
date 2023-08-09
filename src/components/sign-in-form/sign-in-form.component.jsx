@@ -40,7 +40,6 @@ const SignInForm = () => {
         email,
         password
       );
-      setCurrentUser(user);
       resetFormFields(); //Clears out the data in the form fields
     } catch (error) {
       console.log(error);
