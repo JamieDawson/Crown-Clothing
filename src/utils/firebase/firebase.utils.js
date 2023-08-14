@@ -47,10 +47,8 @@ export const createUserDocumentFromAuth = async (
   if (!userAuth) return;
   //see if there's a referrence
   const userDocRef = doc(db, "users", userAuth.uid);
-  // console.log(userDocRef);
 
   const userSnapshot = await getDoc(userDocRef);
-  // console.log(userSnapshot.exists());
 
   //check if it's false
   if (!userSnapshot.exists()) {
