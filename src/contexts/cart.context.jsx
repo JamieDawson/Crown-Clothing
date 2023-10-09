@@ -18,7 +18,9 @@ export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
   const value = { isCartOpen, setIsCartOpen };
 
-  const AddItemToCart = (productToAdd) => {};
+  const AddItemToCart = (productToAdd) => {
+    setCartItems(addCartItem(cartItems, productToAdd));
+  };
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 };
