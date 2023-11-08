@@ -10,7 +10,6 @@ import "./navigation.styles.scss";
 
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
-  //console.log(currentUser);
   const { isCartOpen } = useContext(CartContext);
 
   return (
@@ -18,7 +17,6 @@ const Navigation = () => {
       <div className="navigation">
         <Link className="logo-container" to="/">
           <CrwnLogo className="logo" />
-          {/* <h1>Logo</h1> */}
         </Link>
 
         <div className="nav-links-container">
