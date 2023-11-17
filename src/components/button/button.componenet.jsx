@@ -1,8 +1,3 @@
-/*
-Inverted button,
-Default button,
-Google signin button
-*/
 import {
   BaseButton,
   GoogleSignInButton,
