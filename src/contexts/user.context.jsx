@@ -1,7 +1,7 @@
 import { createContext, useEffect, useReducer } from "react";
 
 import { createAction } from "../utils/reducer/reducer.utils";
-import { USER_ACTION_TYPES } from "../store/user/user.types";
+import USER_ACTION_TYPES from "../store/user/user.types";
 
 import {
   createUserDocumentFromAuth,
